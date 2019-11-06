@@ -11,6 +11,7 @@ body {
     color: #2e3440;
     font-size: 1rem;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 /* Typography */
