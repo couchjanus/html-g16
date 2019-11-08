@@ -53,7 +53,6 @@ img {
     height: auto;
     display: block;
 }
-
 /* container */
 .container {
     width: 100%;
@@ -145,12 +144,90 @@ img {
     color: rgba(255, 255, 255, 0.9);
 }
 
+.navbar label {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    padding: 2px 10px 5px 5px;
+    top: 8px;
+    left: 0;
+    cursor: pointer;
+    z-index: 50;
+}
+    
+.navbar input[type="checkbox"] + label {
+    color: #fff;
+} 
+    
+.navbar input[type="checkbox"]:checked + label {
+    color: #fed136;
+    font-style: normal;
+} 
+    
+.navbar input[type="checkbox"] {
+    display: none;
+}
+
+
+@media screen and (max-width: 850px) {
+    .navbar {
+        display: block;
+        background: #025a1ff1;
+        height: auto; 
+    }
+    
+    .navbar label {
+      display: block;
+    }
+   
+    .navbar .navbar-navigation {
+        background: #025a1ff1;
+        float: left;
+        position: fixed;
+        top: 45px;
+        left: -250px;
+        width: 230px;
+    }
+
+    .nav-item {
+        margin-left: 10px;
+    }
+
+    .nav-item, .form-inline {
+        display: block;
+    }
+
+    .navbar .form-control{
+        width: 210px;
+    }
+
+    .btn-search {
+        display: none;
+    }
+
+    .navbar-brand {
+        margin-left: 30px;
+    }
+
+    .navbar input[type="checkbox"]:checked ~.navbar-navigation  {
+        left: 0;
+    }
+
+    .site-info, .bottom-social-icons {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
 /* card */
 .card {
     display: block;
     background-color: #fff;
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     padding: 1em;
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.125);
@@ -163,6 +240,11 @@ img {
 /* card-body */
 .card-body {
     padding: 1.25rem;
+}
+
+.card-img-top {
+    width: inherit;
+    max-width: 100%;
 }
 
 .showcase .col {
@@ -293,4 +375,106 @@ img {
 .social-icon .linkedin:hover {
     background-color: #007bb5;
     border-color: #007bb5;
+}
+
+
+
+.blog {
+    margin: 3.1em auto 0.1em;
+}
+
+.blog-post {
+    padding-bottom: 0.8em;
+    margin-bottom: 1.8em;
+}
+
+.blog-post-body {
+    margin: 0 10px;
+}
+
+.blog-post header { 
+    height: auto; 
+}
+        
+.blog-post p {
+    margin: 0.5em;
+}
+
+.blog-post .float-right  {
+    float: right;    
+    margin: 0 0 0 15px;
+    width: 300px;
+}
+
+.blog-post .float-left {
+    float: left;    
+    margin: 0 15px 0 0;
+    width: 300px;
+}
+
+.sidebar-title {
+    background-color: #025a1ff1;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+    padding: 15px 0;
+    margin: -50px 0 25px;
+}
+
+.sidebar-widget {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.widget-break-news h4 {
+    text-align: center;
+    margin: 20px 0 5px;
+}
+
+.widget-break-news p {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@media screen and (max-width: 850px) {
+aside{
+    margin-top: 1em;
+}
+.row > * {
+    padding: 10px 0 0 10px;
+}
+
+.row {
+    margin: -10px 0 -1px -10px;
+}
+
+.col, [class*="col-"] {
+    padding: 0 15px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.sidebar-widget{
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.sidebar-widget p {
+    width: 90%;
+}
+
+.sidebar-widget p, .sidebar-widget img {
+    padding: 0 10px;
+}
+
+.card{
+    width: 100%;
+    padding: 0 15px;
+    overflow: hidden;
+}
 }
