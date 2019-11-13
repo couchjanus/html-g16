@@ -9,55 +9,33 @@
     <meta name="author" content="">
     <link rel="icon" href="./favicon.ico">
     <title>Peculiar Shopaholic</title>
-    <link href="css/reset.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
-
-    <style>
-
-        .navbar label {
-                font-size: 30px;
-                position: fixed;
-                padding: 2px 10px 5px 5px;
-                top: 8px;
-                left: 0;
-                cursor: pointer;
-                z-index: 50;
-        }
-                
-        .navbar input[type="checkbox"] + label {
-            color: #fff;
-        } 
-    
-    </style>
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar effect-brackets">
         <input type="checkbox" id="menu-trigger" /> 
-        <label class='label' for="menu-trigger">
+        <label class="label" for="menu-trigger">
             <i class="fas fa-bars" aria-hidden="true"></i>
         </label>
-        <div class="navbar-brand float-left" href="#">Peculiar Shopaholic</div>
+            <div class="navbar__section order1">
+                <div class="navbar__item navbar__brand">
+                    <i class="fas fa-inbox"></i> Peculiar Shopaholic
+                </div>
+                <div class="navbar__item"><a href="#">Home</a></div>
+                <div class="navbar__item"><a href="#">About</a></div>
+                <div class="navbar__item"><a href="#">Blog</a></div>
 
-        <div class="navbar-navigation float-right">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-            </ul>
-            <form class="form-inline">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
-                <a class="btn-search" type="submit">Search</a>
-            </form>
-        </div>
+            </div>
+            <!-- This section gets pushed to the right side-->
+            <div class="navbar__section order2">
+                <div class="navbar__item"><a href="#">Contact</a></div>
+                <div class="navbar__item"><a href="#">Sign In</a></div>
+            </div>
+        
     </nav>
    
 

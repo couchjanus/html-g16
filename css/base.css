@@ -1,0 +1,48 @@
+/* Webfonts and Icon fonts */
+@import url("../fontawesome/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap&subset=cyrillic-ext");
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+ 
+body {
+    margin: 0;
+    color: #2e3440;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin: 0.75 0.5;
+    font-weight: 500;
+}
+  
+h1 {
+    font-size: 2.4em;
+}
+  
+h2 {
+    font-size: 1.8em;
+}
+  
+h3 {
+    font-size: 1.6em;
+}
+  
+strong {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+/* img */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

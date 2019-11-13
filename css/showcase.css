@@ -1,0 +1,61 @@
+/* showcase */
+.showcase{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.card {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0 1em;
+    border: 1px solid #CAD0D2;
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 250px;
+    max-width: 300px;
+    flex: 1 1 calc(33.33% - 30px);
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.card__text {
+    color: #57727C;
+    font-size: 0.8em;
+    text-align: center;
+    max-width: calc(100% - 30px);
+}
+
+.card__btn-group{
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.btn {
+    color: aliceblue;
+    border: none;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+.card__btn-detail{
+    background: forestgreen;
+}
+
+.card__btn-add{
+    background: orangered;
+}
+
+.card__btn-star {
+    background: transparent;
+    color: green;
+}
