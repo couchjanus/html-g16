@@ -1,0 +1,10 @@
+.footer {
+    padding: 2.5rem 0;
+    color: $gray-light;
+    text-align: center;
+    background-color: $gray-lightest;
+    border-top: .05rem solid $gray-lighter;
+    & p:last-child {
+        margin-bottom: 0;
+      }
+  }

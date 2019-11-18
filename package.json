@@ -1,0 +1,28 @@
+{
+  "name": "html-g16",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/couchjanus/html-g16.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/couchjanus/html-g16/issues"
+  },
+  "homepage": "https://github.com/couchjanus/html-g16#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "sass": "^1.23.6"
+  }
+}
